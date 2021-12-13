@@ -82,6 +82,7 @@ main {
     box-sizing: border-box;
 }
 
+/* Use rem for text font sizing instead of px */
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3.25rem;
@@ -116,6 +117,7 @@ a {
     /* padding-top: 30px; */
 }
 
+/* Using box-shadow for depth */
 .mybutton {
     background-color: white;
     color:#FC5E55;
@@ -126,18 +128,29 @@ a {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.226);
 }
 
+
+/* Using pseudo classes */
+.mybutton:hover {
+    background-color: rgb(57, 180, 160);
+    transition: 0.5s;
+}
+
+/* Using Inline Block */
 a.mybutton {
     display: inline-block;
     margin-top: 20px;
 }
 
 .navbutton {
+    /* Format border with 'size', 'style', 'color' */
     border: 1px solid white;
     border-radius: 2px;
     padding: 11px 25px;
     font-family: 'Playfair Display', serif;
 }
 
+/* Using flex wrap on testimonials parent so all tbox's wrap 
+(instead of making individual rows and columns) */
 .testimonials {
     display: flex;
     flex-wrap: wrap;
@@ -151,4 +164,10 @@ a.mybutton {
     border: 1px solid white;
     box-sizing: border-box;
     margin-top: 50px;
+}
+
+/* using pseudo classes */
+.tbox p:last-of-type {
+    font-size: 0.8rem;
+    padding-left: 30px;
 }
