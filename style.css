@@ -1,9 +1,12 @@
-/* html {
-    height: 100%;
-} */
+html {
+    background-image: linear-gradient(#FC5E55, #FA4083);  
+}
 
 body {
-    background-image: linear-gradient(#FC5E55, #FA4083);
+    background-image: url(/images/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.125rem;
@@ -32,6 +35,11 @@ main {
     min-height: 300px;
     display: flex;
     align-items: center;
+}
+
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
 }
 
 .herobox1 {
@@ -147,6 +155,10 @@ a.mybutton {
     border-radius: 2px;
     padding: 11px 25px;
     font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+
 }
 
 /* Using flex wrap on testimonials parent so all tbox's wrap 
@@ -170,4 +182,31 @@ a.mybutton {
 .tbox p:last-of-type {
     font-size: 0.8rem;
     padding-left: 30px;
+}
+
+.dropdown {
+    display:none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 15px;
+    margin-left: -26px;
+    /* text-align: center; */
+}
+
+.navbutton:hover .dropdown {
+    display: block;
+}
+
+.dropdown .navbutton {
+    width: 97px;
+    background-color: white;
+}
+
+.dropdown .navbutton:hover {
+    background-color: #ebe6e8dc;
+    transition: 0.5s;
+}
+
+.dropdown .navbutton a {
+    color: #FC5E55;
 }
